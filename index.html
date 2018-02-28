@@ -39,7 +39,7 @@
       function myFunction() {
         var content = $("#content").html();
         var printWindow = window.open('','','height=400,width=800');
-        printWindow.document.write('<html><head><title>Print</title></head><body>');
+        printWindow.document.write('<html><head><title>PDF</title></head><body>');
         printWindow.document.write(content);
         printWindow.document.write('</body></html>');
         printWindow.document.close();
