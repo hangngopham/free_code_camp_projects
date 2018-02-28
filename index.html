@@ -1,0 +1,144 @@
+<style type="text/css">
+    .body {
+        margin-top: 60px;
+    }
+    .jumbotron {
+        margin-top: 60px;
+        margin-left: 60px;
+        margin-right:60px;
+    }
+    .grace_image {
+        resize: both;
+        width: 50px;
+        height: 25px;
+    }
+    html {
+        background-size: cover;
+    }
+    .box {
+        margin-left: 15px;
+    }
+    #fact {
+        font-size: 15px;
+        font-family: "Helvetica";
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">      
+      function myFunction() {
+        var content = $("#content").html();
+        var printWindow = window.open('','','height=400,width=800');
+        printWindow.document.write('<html><head><title>PDF</title></head><body>');
+        printWindow.document.write(content);
+        printWindow.document.write('</body></html>');
+        printWindow.document.close();
+        printWindow.print();
+    };
+</script>
+
+
+</head>
+<body>
+
+    <div class="container-fluid" id="content">
+        <div class="jumbotron">
+            <h2 class="text-primary text-center">Grace Hopper</h2>
+            <h4 class="text-center"><em>A Pioneer of Computer Programming</em></h4>
+
+            <div class="row">
+                <a href="https://en.wikipedia.org/wiki/Grace_Hopper" target="blank">
+                    <img class="grace-image img-responsive img-fluid center-block img-thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg/440px-Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg" alt="Grace Hopper quote">
+                    <div class="caption text-center">
+                        <p class="text-primary"><strong>Rear Admiral Grace M. Hopper, 1984</strong></p>
+                    </div>
+                </a>
+
+
+            </div>
+
+
+            <div class="row">
+                <h3 class="col-xs-12 text-center">Here's a time line of Grace Hopper's life</h3>
+            </div>
+
+            <h4><strong>Quick Facts</strong></h4>
+            <ul>
+                <li id="fact"><strong>Also Known As: </strong>Grace Murray Hopper, Amazing Grace, Rear Admiral Grace Brewster Murray Hopper</li>
+                <li id="fact"><strong>Famous As: </strong>Computer Scientist</li>
+                <li id="fact"><strong>Nationality: </strong><a href="https://en.wikipedia.org/wiki/United_States" >American</a></li>
+                <li id="fact"><strong>Birth Date: </strong>December 9, 1906</li>
+                <li id="fact"><strong>Born in: </strong>New York City</li>
+            </ul>
+
+            <h4><strong>More Facts</strong></h4>
+            <p style="text-indent: 2.0em; font-size: 15px;">Grace Murray Hopper was an American computer scientist, who was also responsible for developing the first compiler for computer programming language. Eldest among her siblings, Grace was a curious child and went to Hartridge SChool in New Jersey fr preparatory education. Her attempt to enter Vassar College was faced with rejection for the first time as she did not have satisfactory marks in Latin. She was accepted the following year, and graduated with her Bachelor's degree in Physics and Mathematics. Two years later, she earned her Master's degree in the same discipline from Yale University. While doing her PhD under Oystein Ore, she taught in vassar College, where she earned the position of Associate Professor after ten years of service. During World War II, she joined Navy and was commissioned as a lieutenant. She was assigned to teh Bureau of Ordinance Computation Project in harvard. After her naval duties ended, she joined Remington Rand, where she worked on UNIVAC. She became the Director of automatic programming and sought to find specifications of common business language in computer leading to the discovery of COBOL or Common Business-Oriented Language. This was the first user-friendly computer software and Grace was responsible for advocating the validation process to bring international standardization of computer languages. Read on to know more about her life and works.</p>
+
+            <h4><strong>Childhood and Early Life</strong></h4>
+            <ul>
+                <li>Grace was born on December 9th, 1906 in New York and was the oldest among her siblings. Her parents Walter Fletcher Murray and Mary Campbell Van Horne were of mixed culture; Scottish and Dutch.</li>
+                <li>As a child Grace was curious and dismantled seven alarm clocks to understand its functionalities. She attended the ‘Hartridge School’ in New Jersey for preparatory education.</li>
+                <li>At the age of 16, she was rejected at the ‘Vassar College’, because of her insufficient marks in Latin. The next year, Grace was accepted and got her Bachelor’s degree in Mathematics and Physics, when she completed her graduation in 1928.</li>
+                <li>In 1930, she received her Master’s degree in Mathematics from ‘Yale University’.</li>
+                <li>She then began research work for her doctoral degree simultaneously taking up a position as member of faculty at the ‘Vassar College’ in 1931. Three years later she successfully obtained her PhD from Yale.</li>
+            </ul>
+
+            <h4><strong>Career</strong></h4>
+            <ul>
+                <li>She worked in Vassar till 1943 when she joined United States Naval Reserve to serve her country during wartime. The following year Grace was commissioned as a lieutenant.</li>
+                <li>She was assigned a project of ‘Bureau of Ordinance Computation Project’ in Harvard presenting her the opportunity to work in the university’s ‘Cruft Laboratories’ on Mark computers.</li>
+                <li>In 1946, Grace resigned from Vassar to become a research fellow in Harvard’s Computation Laboratory. She took up the position in applied physics and engineering.</li>
+                <li>In 1949, Grace joined ‘Eckert-Mauchly Corporation’ and was given the position of Senior Mathematician.</li>
+                <li>This company was taken over by Remington Rand in 1950 and was merged with ‘Sperry Corporation’ after five years.</li>
+                <li>During her years in Remington Rand, she was in charge of the programming of UNIVAC. In the year 1952, her team was responsible for creating the first compiler for computers.</li>
+                <li>In 1959, at the ‘Conference of Data Systems Languages’, Hopper was the technical consultant of the committee. She along with her colleagues defined COBOL, or ‘Common Business-Oriented Language’, which is till date one of the most famous business languages.</li>
+                <li>Grace took a leave from ‘Sperry Corporation’ in 1967, to serve in the Navy. Later in the same year, she was called to service as a leader in ‘Naval Data Automation Command’.</li>
+                <li>For ten years after that, Grace was the ‘Director of Navy Programming Languages Group’.</li>
+                <li>In 1973, she was promoted to the position of Captain. During her years in Navy, she was also called to create and standardize communication among different computer languages.</li>
+                <li>In 1986, Hopper retired as a rear admiral. She was the oldest serving officer in service.</li>
+            </ul>
+
+            <h4><strong>Major Works</strong></h4>
+            <ul>
+                <li>Grace led the team which invented COBOL or Common-Business Oriented Language, one of the user-friendly computer software programs which can be used for business purpose. Though she did not invent the language, she definitely encouraged its adaptation.</li>
+                <li>Awards & Achievements</li>
+                <ol>
+                    <li>In 1969, Grace was awarded the first ‘Computer Science Man-of-the-Year Award’ from ‘Data Processing Management Association’.</li>
+                    <li>In 1973, she was the first woman and the first US citizen to be honoured as the ‘Distinguished Fellow of the British Computer Society’.</li>
+                    <li>In 1986, she was awarded the ‘Defense Distinguished Service Medal’.</li>
+                    <li>In 1991, she was awarded the ‘National Medal of Technology’. She was the first woman recipient of this honour.</li>
+                </ol>
+            </ul>
+
+            <h4><strong>Personal Life and Legacy</strong></h4>
+            <ul>
+                <li>Grace was married to Vincent Foster Hopper but the couple divorced in 1945. They had no children.</li>
+                <li>On January 1st, 1992, the renowned computer scientist breathed her last, in Arlington, Virginia.</li>
+                <li>In her honour, the ‘Grace Hopper Celebration of Women in Computer Science’, a technical conference is organized which encourage women to be part of the computing world. She was an inspirational speaker who encouraged young people to learn programming.</li>
+                <li>A ‘Grace Murray Hopper Award’ is given in her honour by the ‘Association for Computing Machinery’.</li>
+            </ul>
+
+            <h4><strong>Trivia</strong></h4>
+            <p style="text-indent: 2.0em; font-size: 15px;"">For her distinguished work in the field of computers Grace was known as the ‘Amazing Grace’. She also earned the nickname Grandma COBOL for leading COBOL’s development.</p>
+        </div>
+        <a href="./rear-admiral-grace-murray-hopper.pdf" download="">
+            <p class="text-center">Download Grace Hopper's timelines as PDF</p>
+        </a>
+        <button id="download" onclick="myFunction()" class="center-block">Download page as PDF</button>
+        <p class="text-center text-primary 14px">Coded by <a href="https://github.com/hangngopham" target="blank"><strong>Hang Ngo</strong></a></p>
+        <p class="text-center text-primary 14px">&copy; from <a href="https://www.thefamouspeople.com/profiles/rear-admiral-grace-murray-hopper-1536.php" target="blank">The Famous People</a></p>
+    </div>
+</body>
+</html>
+<!--Features to add
+1. Create tab so that users can choose which tab to know about Grace Hopper
+2. Download as pdf format-->
