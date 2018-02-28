@@ -1,2 +1,0 @@
-This is a "Build a Tribute Page" project of Front End Development track from freeCodeCamp. In this project, I will utilize Bootstrap to build a tribute web page for Grace Hopper who is named after one of the biggest computing conference for women in the world, Grace Hopper Celebration of Women in Computing. I am very grateful to the conference because it not only helps me build a good network in computer science but also greatly contributes to my self-development in computer industry
-
