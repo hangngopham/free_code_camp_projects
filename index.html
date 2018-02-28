@@ -32,24 +32,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
   <script type="text/javascript">
-      $("#download").live("click", function() {
-        var content = $(".content").html();
+      $("#download").live('click',function() {
+        var content = $("#content").html();
         var printWindow = window.open('','','height=400,width=800');
         printWindow.document.write('<html><head><title>Print</title></head><body>');
         printWindow.document.write(content);
         printWindow.document.write('</body></html>');
         printWindow.document.close();
         printWindow.print();
-      });
-  </script>
+    });
+</script>
 
 
 </head>
 <body>
 
-    <div class="content container-fluid">
+    <div class="container-fluid" id="content">
         <div class="jumbotron">
             <h2 class="text-primary text-center">Grace Hopper</h2>
             <h4 class="text-center"><em>A Pioneer of Computer Programming</em></h4>
@@ -136,7 +139,7 @@
         </a>
 
 
-        <button id="download">Download page as PDF</button>
+        <button id="download" class="center-block">Download page as PDF</button>
 
         <p class="text-center text-primary 14px">Coded by <a href="https://github.com/hangngopham" target="blank"><strong>Hang Ngo</strong></a></p>
         <p class="text-center text-primary 14px">&copy; from <a href="https://www.thefamouspeople.com/profiles/rear-admiral-grace-murray-hopper-1536.php" target="blank">The Famous People</a></p>
